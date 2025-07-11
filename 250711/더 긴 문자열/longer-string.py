@@ -1,7 +1,6 @@
-first=input()
-second=input()
-f=first.count()
-s=second.count()
+first,second=map(str,input().split())
+f=len(first)
+s=len(second)
 if f>s:
     print(first,f,sep=" ")
 elif s>f:
