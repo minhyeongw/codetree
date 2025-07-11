@@ -1,4 +1,5 @@
-string=input()
-new_string=string.replace(string[1],'a',1)
-final_string=new_string.replace(new_string[-2],'a',1)
-print(final_string)
+string=list(input())
+string[1]='a'
+string[-2]='a'
+for i in range(len(string)):
+    print(string[i],end="")
