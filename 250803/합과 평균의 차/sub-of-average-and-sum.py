@@ -1,0 +1,6 @@
+a,b,c=map(int, input().split())
+sum=int(a+b+c)
+average=int(sum/3)
+print(sum)
+print(average)
+print(sum-average)
