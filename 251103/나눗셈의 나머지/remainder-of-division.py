@@ -5,5 +5,6 @@ while a>1:
     arr[a%b]+=1
 sum=0
 for i in arr:
+    print(arr[i])
     sum+=arr[i]*arr[i]
 print(sum)
