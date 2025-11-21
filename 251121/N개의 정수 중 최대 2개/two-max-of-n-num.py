@@ -2,10 +2,14 @@ n = int(input())
 a = list(map(int, input().split()))
 
 # Please write your code here.
-ma=max(a)
-down=list()
-for i in range(n):
-    if ma-i in a:
-        down.append(ma-i)
+if a[0]>a[1]:
+    max1,max2=a[0],a[1]
+else:
+    max1,max2=a[1],a[0]
 
-print(down[0],down[1])
+for i in range(2,n):
+    if a[i]>max1:
+        max1,max2=a[i],max1
+    elif a[i]>max2:
+        max2=a[i]
+print(max1,max2)
