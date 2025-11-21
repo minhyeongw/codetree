@@ -3,8 +3,9 @@ a = list(map(int, input().split()))
 
 # Please write your code here.
 ma=max(a)
-mi=min(a)
-for i in a:
-    if i>=mi and i<ma:
-        mi=i
-print(ma, mi)
+down=list()
+for i in range(n):
+    if ma-i in a:
+        down.append(ma-i)
+
+print(down[0],down[1])
