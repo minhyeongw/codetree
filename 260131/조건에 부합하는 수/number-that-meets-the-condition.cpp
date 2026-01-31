@@ -8,7 +8,7 @@ int main() {
         if ((i%2==0 && i%4!=0) || i%7<4 || (i/8)%2==0){
             continue;
         }
-        cout<<i<<" "
+        cout<<i<<" ";
     }
     // Please write your code here.
     return 0;
