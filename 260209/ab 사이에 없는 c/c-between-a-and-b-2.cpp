@@ -6,7 +6,7 @@ int main() {
     cin>>a>>b>>c;
     bool stat=false;
     for(int i=a;i<=b;i++){
-        if (c%i==0){
+        if (i%c==0){
             stat=true;
         }
     }
