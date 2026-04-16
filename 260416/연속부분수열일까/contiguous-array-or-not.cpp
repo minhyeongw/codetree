@@ -14,8 +14,8 @@ int main() {
         cin>>b[i];
     }
 
-    for(int i=0;i<n1;i++){
-        for(int j=0;j<n2;j++){
+    for(int i=0;i<n1-1;i++){
+        for(int j=0;j<n2-1;j++){
             if (a[i]==b[j] && a[i+1]==b[j+1]){
                 con=true;
             }
